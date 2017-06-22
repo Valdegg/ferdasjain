@@ -34,5 +34,12 @@ def get_for_day(from_airport, day, stay=None):
 	
 	
 	
+
+fluggjold = get_for_day("KEF", "2017-07-12")
+print(fluggjold)
+gjold = fluggjold['fares']
+vellir = fluggjold['airports']
+for flug in gjold: 
 	
-print(get_for_day("KEF", "2017-07-12"))
+	print( vellir[flug['b']] )
+	print( str(flug['f'])+ flug['c']) 
